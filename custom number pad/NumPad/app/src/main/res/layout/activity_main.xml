@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.matthew.numpad.MainActivity"
+    android:orientation="vertical"
+    android:showDividers="middle|beginning|end">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:gravity="center"
+        android:minHeight="55dp"
+        android:showDividers="middle|beginning|end">
+
+        <TextView
+            android:id="@+id/rip_keys_1"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/one1"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/rip_keys_2"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/two2"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/rip_keys_3"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/three3"
+            android:textIsSelectable="false"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_marginRight="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:gravity="center"
+        android:showDividers="middle"
+        android:minHeight="55dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/rip_keys_4"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/four4"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/rip_keys_key_5"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/five5"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/rip_keys_6"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/six6"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:gravity="center"
+        android:showDividers="middle"
+        android:minHeight="55dp">
+
+        <TextView
+            android:id="@+id/rip_keys_7"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/seven7"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/rip_keys_8"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/eight8"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/rip_keys_9"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/nine9"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:gravity="center"
+        android:showDividers="middle"
+        android:minHeight="55dp">
+
+        <TextView
+            android:id="@+id/rip_keys_third_row_BACK"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/remove_char"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/rip_keys_0"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/zero0"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" />
+        <TextView
+            android:id="@+id/rip_keys_period"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/decimal"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:gravity="center"
+        android:showDividers="middle"
+        android:minHeight="55dp">
+
+        <TextView
+            android:id="@+id/rip_keys_fourth_row_left_CLEAR"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/clear"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="80dp" />
+
+
+        <TextView
+            android:id="@+id/rip_keys_fourth_row_right_ENTER"
+            style="@style/rip_keys"
+            android:text=""
+            android:background="@mipmap/enter"
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="80dp" />
+
+    </TableRow>
+</TableLayout>

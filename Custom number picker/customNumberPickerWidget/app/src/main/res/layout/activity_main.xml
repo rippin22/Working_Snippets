@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bfbfbf"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="19dp"
+        android:layout_height="13dp"
+        android:layout_below="@+id/textView3"
+        android:background="@drawable/minus12"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/numberSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:text="  5  "
+        android:background="@drawable/border"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="21dp"
+        android:layout_height="15dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:background="@drawable/add12" />
+
+</LinearLayout>

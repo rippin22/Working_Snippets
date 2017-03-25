@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.matthew.tmro.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9a9a9"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawTypeSwitch"
+            android:layout_weight=".2"
+            android:layout_gravity="left|center"
+            android:gravity="center"
+            android:text="Draw: " />
+
+        <ImageButton
+            android:id="@+id/draw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="brush"
+            android:src="@drawable/brush"
+            android:layout_weight="1"
+            android:background="#a9a9a9" />
+
+        <ImageButton
+            android:id="@+id/erase_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="erase"
+            android:src="@drawable/eraser"
+            android:background="#a9a9a9"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/new_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="start_new"
+            android:src="@drawable/new_pic"
+            android:background="#a9a9a9"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <com.example.matthew.tmro.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:background="#FFFFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textViewDatePicker"
+            android:layout_weight="9"
+            style="@android:style/Widget.Holo.Spinner"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center|center_horizontal"
+            android:autoText="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/saveCurrentDrawTaskBtn"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
